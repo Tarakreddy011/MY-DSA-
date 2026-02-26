@@ -12,12 +12,10 @@ public class DAY1Arrays {
         String name[] = {"tarak", "Reddy", "comeback"};
 
         //System.out.println(name);
-
         Arrays.sort(name);
         int size = name.length;
-        System.out.println("size  of array is " + size);
 
-    
+        System.out.println("size  of array is " + size);
         Arrays.fill(name, "tarak");
 
         name[1] = "get";
@@ -40,7 +38,6 @@ public class DAY1Arrays {
 		fruits[a] = sc.nextLine();
 	}
 
-
     Arrays.sort(fruits);
 
     for(int b =0; b<fruits.length;b++){
@@ -48,7 +45,54 @@ public class DAY1Arrays {
     }
 
 
+    //linera serach in
 
 
+       String target;
+        boolean isfound = false;
+
+        System.out.println("enter the fruit to search: ");
+
+        target = sc.nextLine();
+
+        for(int c = 0; c<fruits.length; c++){
+            if(fruits[c].equals(target)){
+                System.out.println("fruit is found at index " + c);
+                isfound = true;
+                break;
+            }
+        }
+
+        if(!isfound){
+            System.out.println("fruit is not found in the array");
+        }
+
+
+
+        ///min and max in a array
+
+        int[] num = {9,7,86,34,34834,2};
+
+        int min;
+        int max;
+
+        min = num[0];
+        max = num[0];
+
+        for(int d = 0; d<num.length;d ++){
+            if(num[d]<min){
+                min = num[d];
+            }
+            if(num[d]>max){
+                max = num[d];
+            }
+        }
+        System.out.println("min value is " + min);
+        System.out.println("max value is " + max);
+
+
+
+
+        sc.close();
     }	
 }
