@@ -49,7 +49,8 @@ public class DAY1Arrays {
 
 
        String target;
-        boolean isfound = false;
+        boolean isfound = false; // flag to check the found element in the array  the time complexcity
+		
 
         System.out.println("enter the fruit to search: ");
 
@@ -73,8 +74,9 @@ public class DAY1Arrays {
 
         int[] num = {9,7,86,34,34834,2};
 
-        int min;
-        int max;
+        int min; // min  value in the arrya 
+        int max;  // max value in the array
+		
 
         min = num[0];
         max = num[0];
