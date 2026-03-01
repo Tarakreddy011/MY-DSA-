@@ -90,9 +90,6 @@ public class DAY1Arrays {
         System.out.println("min value is " + min);
         System.out.println("max value is " + max);
 
-
-
-
         sc.close();
     }	
 }
